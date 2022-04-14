@@ -30,7 +30,7 @@ const App = () => {
   ];
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <h2>Cool looking list, ain't it?</h2>
       <ExpenseItem
         expenseDesc={expenses[0].expenseDesc}
         expenseSum={expenses[0].expenseSum}
