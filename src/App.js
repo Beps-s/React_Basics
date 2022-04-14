@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import ExpenseItem from './components/ExpenseItem';
+import Expenses from './components/Expenses';
 
 const App = () => {
   const expenses = [
@@ -31,26 +31,7 @@ const App = () => {
   return (
     <div>
       <h2>Cool looking list, ain't it?</h2>
-      <ExpenseItem
-        expenseDesc={expenses[0].expenseDesc}
-        expenseSum={expenses[0].expenseSum}
-        expenseDate={expenses[0].expenseDate}
-      ></ExpenseItem>
-      <ExpenseItem
-        expenseDesc={expenses[1].expenseDesc}
-        expenseSum={expenses[1].expenseSum}
-        expenseDate={expenses[1].expenseDate}
-      ></ExpenseItem>
-      <ExpenseItem
-        expenseDesc={expenses[2].expenseDesc}
-        expenseSum={expenses[2].expenseSum}
-        expenseDate={expenses[2].expenseDate}
-      ></ExpenseItem>
-      <ExpenseItem
-        expenseDesc={expenses[3].expenseDesc}
-        expenseSum={expenses[3].expenseSum}
-        expenseDate={expenses[3].expenseDate}
-      ></ExpenseItem>
+      <Expenses items={expenses} />
     </div>
   );
 }
